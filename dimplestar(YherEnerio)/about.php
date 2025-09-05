@@ -15,7 +15,6 @@
 <!-- Session Welcome -->
 <div class="container mt-4 text-end">
   <?php
-    session_start();
     if(isset($_SESSION['email'])){
       echo "<p>Welcome, <strong>{$_SESSION['email']}</strong>! 
               <a href='logout.php' class='btn btn-success btn-sm'>Logout</a></p>";
